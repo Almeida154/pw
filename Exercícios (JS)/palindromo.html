@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Palíndromo!!!</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1 class="extensoT">Palíndromo</h1>
+        <div class="extenso">
+            <script type="text/javascript">
+                var x;
+                x=(prompt("Digite alguma frase:"))
+                document.write(x+"<br><br><br>")
+                x=x.toLowerCase()
+                var max=x.length, aux=0, min=0, cont=0
+                for(cont=0; cont<=x.length; cont++){
+                    if(x.charAt(cont)==' '){
+                        x=x.replace(' ', '')
+                    }
+                }
+                for(min=0, max=x.length-1; min<x.length; min++, max--){
+                    if(x.charAt(min)==x.charAt(max)){
+                        aux++
+                    }
+                }
+                if(x.length==aux || aux==x.length-1){
+                    document.write("É um palíndromo!")
+                }
+                else{
+                    document.write("Não é um palíndromo!")
+                }
+            </script>
+        </div>
+        <a class="back" href="index.html"><h1 class="back">Voltar</h1></a>
+    </body>
+</html>

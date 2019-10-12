@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Login de Acesso</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1 class="extensoT">Login</h1>
+        <div class="login">
+            <div id="foto">
+                <img id="ft" src="img/user.png">
+            </div>
+            <div id="program">
+                <h1 id="Et">Etec de Guaianazes</h1>
+                <hr id="linha">
+                <script type="text/javascript">
+                    var x, id, cargo, letrinha, aux, sobre;
+                    x=(prompt("Digite seu nome e sobrenome:"))
+                    id=(prompt("Digite sua idade:"))
+                    cargo=(prompt("Digite seu cargo (Aluno(a), Professor(a)...):"))
+                    document.write("Nome: "+x+"<br>")
+                    letrinha=x.charAt(0)
+                    aux=x.indexOf(" ")
+                    sobre=x.slice(aux+1, x.length)
+                    letrinha=letrinha.toLowerCase()
+                    sobre=sobre.toLowerCase()
+                    document.write("Login: "+letrinha+"."+sobre+"<br>")
+                    document.write("Idade: "+id+" anos<br>")
+                    document.write("Ofício: "+cargo+"<br>")
+                </script>
+            </div>
+        </div>
+        <a class="backT" href="index.html"><h1 class="backT">Voltar</h1></a>
+    </body>
+</html>
